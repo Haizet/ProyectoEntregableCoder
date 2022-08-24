@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Flia</title>
+</head>
+<body>
+    {%for p in padres%}
+        {{p.nombre}}
+        {{p.apellido}}
+        {{p.edad}}
+        {{p.fecha_nac}}
+        {{p.es_padre}}
+        <br>
+    {%endfor%}
+        {%for h in hijos%}
+        {{h.nombre}}
+        {{h.apellido}}
+        {{h.edad}}
+        {{h.fecha_nac}}
+        {{h.es_hijo}}
+    <br>
+    {%endfor%}
+</body>
+</html>

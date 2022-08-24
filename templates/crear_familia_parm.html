@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Flia por Param</title>
+</head>
+<body>
+    {{integrante.nombre}}
+    {{integrante.apellido}}
+    {{integrante.edad}}
+    {{integrante.fecha_nac}}
+    {%if integrante.get_class == 'Padre' %}
+        Es padre:
+        {{integrante.es_padre}}
+    {%else%}
+        Es Hijo:
+        {{integrante.es_hijo}}
+    {%endif%}
+    <br>
+</body>
+</html>
